@@ -1,82 +1,60 @@
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    margin: 10px;
-    padding: 10px;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #fff;
-    font-family: Garamond, serif;
-    font-size: 30px;
-    color: #333;
-    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
-    height: 80px;
-    z-index: 1000;
-}
-
-.header .logo {
-    font-size: 2.5rem;
-    color: rgb(59, 134, 59);
-    padding: 10px 15px;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-.navbar {
-    display: flex;
-    gap: 50px;
-    text-align: left;
-}
-
-.header .navbar a:hover {
-    color: aqua;
-}
-
-@media (max-width: 550px) {
-    .navbar {
-        flex-direction: column;
-        gap: 20px;
-    }
-}
-
-.imag1 {
-    width: 50%;
-    height: auto;
-    margin-top: 20px;
-     /* Adjust this if you want space above the image */
-    display: block;
-}
-
-.content {
-    display: flex;
-    align-items: center;
-    margin-right: 20px;
-}
-
-h2 {
-    font-size: 4rem;
-    font-family: monospace;
-    color: rgb(59, 134, 59);
+body {
     margin: 0;
-    padding: 10px 0;
-    font-weight: bold;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
 }
+.navbar {
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.navbar .logo img {
+    width: 150px;
+}
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+}
+.navbar ul li {
+    display: inline;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+.navbar ul li a:hover {
+    color: #007bff;
+}
+.navbar .book-now {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.navbar .book-now:hover {
+    background-color: #0056b3;
+}
+
+
 
 .quote{
     text-align: left;        
-    margin:  0;           /* Adds vertical space above and below */
+    margin:  0;          
+    
     padding: 10px;            
     font-size: 50px;          
     font-family: 'Garamond', serif; 
         
     color:black;   
-    transform : translateY(-153px);    
+    transform : translateY(100px);    
 }
 .imp{
     font-family: 'Garamond', serif;
@@ -92,7 +70,7 @@ h2 {
     justify-content: space-between;
     align-items: center;
     width: 900px;
-    transform : translateY(-153px); 
+    transform : translateY(100px); 
     width: 90%;
 }
 .stat-item {
@@ -117,7 +95,7 @@ h2 {
     text-transform: uppercase;
 }
 about-us {
-    transform : translateY(-500px); 
+    transform : translateY(200px); 
     display: flex;
     align-items: center;
     padding: 20px;
@@ -143,7 +121,7 @@ about-us {
     display: flex;
     height: 100%;
     width: 100%;
-    transform: translateY(-100px);
+    transform: translateY(200px);
 }
 .mission {
     flex: 2;
