@@ -1,0 +1,80 @@
+/* Body and overall page settings */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Container for the hospital section */
+.hospital-section {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Container to hold all hospital cards */
+.hospital-list {
+    display: flex;
+    flex-direction: column;  /* Stack hospital cards vertically */
+    align-items: stretch;  /* Allow cards to stretch to full width */
+    gap: 20px;  /* Space between hospital cards */
+}
+
+/* Individual hospital card */
+.hospital-card {
+    width: 100%; /* Occupy full width of the parent container */
+    max-width: 900px; /* Limit the width, if desired */
+    box-sizing: border-box;
+    display: flex;  /* Use flex to arrange logo and details horizontally */
+    flex-direction: row;  /* Horizontally align logo and details */
+    align-items: flex-start;  /* Align items to the top */
+    padding: 60px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Logo inside the card */
+.hospital-logo {
+    width: 300px;  /* Adjust logo size */
+    height: 200px;
+    object-fit: cover;
+    margin-right: 20px; /* Space between logo and details */
+}
+
+/* Details section inside the hospital card */
+.hospital-details {
+    display: flex;
+    flex-direction: column;  /* Stack the details vertically */
+    gap: 10px;  /* Space between the details */
+    flex-grow: 1; /* Allow details to take remaining space */
+}
+
+/* Title of the hospital (Hospital Name) */
+.hospital-card h2 {
+    margin: 0;
+    font-size: 1.8em;
+    color: #333;
+}
+
+/* Styling the text details inside each hospital card */
+.hospital-card p {
+    margin: 5px 0;
+    color: #666;
+    font-size: 1em;
+}
+
+/* Responsive behavior for smaller screens */
+@media (max-width: 768px) {
+    .hospital-card {
+        width: 100%; /* Full width on small screens */
+        max-width: 100%;
+    }
+
+    .hospital-logo {
+        width: 100px;
+        height: 100px;
+    }
+}
